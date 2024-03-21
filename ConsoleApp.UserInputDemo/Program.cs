@@ -19,7 +19,7 @@ Console.WriteLine("Plaese enter your age: ");
 age = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Plaese enter your salary: ");
-salary = Convert.ToInt32(Console.ReadLine());
+salary = Convert.ToDecimal(Console.ReadLine());
 
 Console.WriteLine("Plaese enter your gender (M or F): ");
 gender = Convert.ToChar(Console.ReadLine());
