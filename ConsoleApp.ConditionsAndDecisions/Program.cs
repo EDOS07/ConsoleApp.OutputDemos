@@ -36,7 +36,7 @@ if (grade < 0 || grade > 100)
 }
 else if (grade < 50)
 {
-    Console.WriteLine("Student has Failed - F");
+    Console.WriteLine("Student has Failed - F");    
 }
 else if (grade >= 50 && grade <= 64)
 {
@@ -54,13 +54,65 @@ else if (grade >= 86 && grade <= 100)
 {
     Console.WriteLine("A - Good Job");
 }
-else
-{
-    Console.WriteLine();
-}
 
+int gradeAferBonus = grade >= 0 && grade <= 100 ? grade + 10 : 0;
+
+Console.WriteLine($"Grade after bonus: {gradeAferBonus}");
 
 Console.WriteLine("*************** Complex IF.. ELSE IF Results End ***************");
+
+// Ternary operator - Used to Ussign a value to a variable based on a condition.
+
+Console.WriteLine("*************** Termary Operator Result ***************");
+
+string passStatus = grade < 50 ? "Fail" : "Pass";
+Console.WriteLine($"Stedent Status is: {passStatus}");
+
+Console.WriteLine("*************** Termary Operator Result End ***************");
+
+/* Write a program to accept an integer as the day of the wek and print the appropriate
+ * messege as outluned below.
+ * 1 - Sunday 
+ * 2 - Monday
+ * 3 - Tuesday
+ * 4 - Wednesday (Hump Day!)
+ * 5 - Thursday
+ * 6 - Friday (TGIF!!!)
+ * 7 - Saturday (Beach Day!!!)
+ */
+Console.WriteLine("Please enter the day of the week: ");
+
+
+int dayOftheWeek = Convert.ToInt32(Console.ReadLine());
+switch (dayOftheWeek)
+{
+    case 1:
+        Console.WriteLine("Sunday");
+        //more code
+        //more code
+        break;
+    case 2:
+        Console.WriteLine("Monday");
+        break;
+    case 3:
+        Console.WriteLine("Tuesday");
+        break;
+    case 4:
+        Console.WriteLine("Wednesday)");
+        Console.WriteLine("(Hump Day!)");
+        break;
+    case 5:
+        Console.WriteLine("Tuesday");
+        break;
+    case 6:
+        Console.WriteLine("Friday");
+        Console.WriteLine("TGIF!!!)");
+        break;
+    case 7:
+        Console.WriteLine("Saturday");
+        Console.WriteLine("(Beach Day!!!)");
+        break;
+}
 
 // the rest of the application
 
